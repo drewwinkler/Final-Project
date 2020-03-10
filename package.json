@@ -3,18 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "classnames": "^2.2.6",
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "google-map-react": "^1.1.6",
+    "http-proxy-middleware": "^1.0.1",
+    "keycode": "^2.2.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-fontawesome": "^1.7.1",
+    "react-responsive-carousel": "^3.1.51",
     "react-scripts": "3.4.0"
   },
+  "homepage": "https://drew-project2-final.herokuapp.com/",
+  "heroku-run-build-script": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "NODE_ENV=production node express.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client": "react-scripts start",
+    "server": "nodemon express.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server \" \"npm run client\" "
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,9 +43,9 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ]
   }
 }
