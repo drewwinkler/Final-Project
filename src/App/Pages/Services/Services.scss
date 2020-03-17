@@ -1,0 +1,26 @@
+.Services {
+    background-color: #6034b3;
+    margin: 50px 0px;
+    padding: 20px;
+    color: white;
+    
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+.ServiceList {
+        width: 300px;
+        margin: 20px;
+        img {
+            display: block;
+        }
+        h3 {
+            margin: 0px;
+            background-color: white;
+            padding: 5px 10px;
+            //color: rgb(204, 0, 255);
+        }
+    }
+}

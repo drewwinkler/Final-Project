@@ -1,0 +1,25 @@
+.Contact {
+
+    padding: 0px;
+
+}
+
+// Medium Breakpoint
+@media screen and (min-width: 600px) {
+    .Contact {
+        .row1 {
+                //display: flex;
+                max-width: 1200px;
+                margin: auto;
+                margin-bottom: 70px;
+                margin-top: 50px;
+        
+        .column //{ min-height: 300px; }
+
+        
+        .comlumn2 {
+                flex: 2;
+            }
+        }
+    }
+}
