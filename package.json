@@ -24,7 +24,7 @@
     "react-responsive-carousel": "^3.1.51",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
-    "youtube-video-js": "^3.1.4"
+    "react-youtube": "^7.9.0"
   },
   "homepage": "https://drew-project2-final.herokuapp.com/",
   "heroku-run-build-script": true,

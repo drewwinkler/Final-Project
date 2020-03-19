@@ -1,37 +1,29 @@
 import React from 'react';
-import './youtube-video.scss';
-import 'youtube-video-js';
-import { YoutubeVideoElement } from 'youtube-video-js';
+import YouTube from 'react-youtube';
+import './Video.scss';
 
 const Video = () => {
-    <script
-        type="module"
-        src="/node_modules/youtube-video-js/dist/youtube-video.js"
-    ></script>
-    <youtube-video
-        width="640"
-        height="360"
-        scr="https://www.youtube.com/watch?v=bJnf9D_4xRk"
-        autoplay
-        controls
-        />
 
-        <script>
-        const videoElement = document.querySelector('youtube-video');
-    
-        // must wait for DOM to be ready and for component to be accessible
+    const opts = {
+        height: '390',
+        width: '640',
+        playerVars: { // https://developers.google.com/youtube/player_parameters
+            autoplay: 1
+        }
+    };
 
-        document.addEventListener('DOMContentLoaded', function() {
-            // wait for loading
-            videoElement.load().then(() => {
-                // pause video after two seconds
-                const timer = setTimeout(function() {
-                    videoElement.pause();
-                    clearTimeout(timer);
-                }, 2000);
-            });
-        });
-    </script> 
+
+    return (
+        <div className="Video">
+            <YouTube
+                videoId="bJnf9D_4xRk"
+                opts={opts}
+                // onReady={this._onReady}
+            />
+            
+        </div>
+
+    );
 }
 
 export default Video;
