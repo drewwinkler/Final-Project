@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './Slideshow.scss';
 import API from '../../../common/API.js';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+
+import './Slideshow.scss';
 
 const defaultSlides = [
     {

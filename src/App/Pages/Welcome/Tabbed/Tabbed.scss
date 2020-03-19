@@ -3,6 +3,7 @@
     .tabs {
         display: flex;
         font-family: sans-serif;
+        justify-content: flex-end;
         
         &:hover {
             color: grey;
@@ -11,7 +12,7 @@
         .tab {
             background-color: #6a44af;
             padding: 10px 20px;
-            margin-right: 10px;
+            margin-left: 10px;
             margin-top: 90px;
             color: white;
             font-size: xx-large;
